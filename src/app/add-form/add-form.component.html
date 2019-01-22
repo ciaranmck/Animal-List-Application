@@ -1,0 +1,47 @@
+<div class="container">
+  <form #animalForm="ngForm">
+    <div class="form-group">
+      <label for="species">Species</label>
+      <input
+        type="text"
+        class="form-control"
+        id="species"
+        required
+        [(ngModel)]="model.species"
+        name="species"
+      />
+    </div>
+
+    <label for="habitat">Habitat</label>
+    <input
+      type="text"
+      class="form-control"
+      id="habitat"
+      required
+      [(ngModel)]="model.habitat"
+      name="habitat"
+    />
+
+    <label for="info">Info</label>
+    <input
+      type="text"
+      class="form-control"
+      id="info"
+      required
+      [(ngModel)]="model.info"
+      name="info"
+    />
+
+    <label for="img">Image Url</label>
+    <input
+      type="text"
+      class="form-control"
+      id="img"
+      required
+      [(ngModel)]="model.img"
+      name="img"
+    />
+
+    <button (click)="addAnimal()">Submit</button>
+  </form>
+</div>

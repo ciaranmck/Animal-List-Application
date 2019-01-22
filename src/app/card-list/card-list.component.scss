@@ -1,0 +1,22 @@
+.card {
+  margin-top: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 220px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+
