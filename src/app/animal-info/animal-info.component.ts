@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -11,7 +12,11 @@ import Swal from 'sweetalert2';
 export class AnimalInfoComponent implements OnInit {
   animal;
 
-  constructor(public _apiService: ApiService, public _route: ActivatedRoute) {}
+  constructor(
+    public _apiService: ApiService,
+    public _route: ActivatedRoute,
+    public _router: Router
+    ) {}
 
   ngOnInit() {
     this.getAnimal();
@@ -27,5 +32,10 @@ export class AnimalInfoComponent implements OnInit {
 
   deleteAnimal() {
     this._apiService.deleteOne(this.animal);
+    this.updateAnimalList();
+  }
+
+  updateAnimalList() {
+    this._apiService.getAll().subscribe();
   }
 }

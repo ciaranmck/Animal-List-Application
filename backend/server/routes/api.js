@@ -52,7 +52,7 @@ router.get("/info/:animal", async (req, res) => {
 
     res.send(animal);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     res.sendStatus(500);
   }
 })

@@ -18,6 +18,11 @@ export class AddFormComponent implements OnInit {
 
   addAnimal() {
     this._apiService.addOne(this.model);
+    this.updateAnimalList();
+  }
+
+  updateAnimalList() {
+    this._apiService.getAll().subscribe();
   }
 
 }
