@@ -22,7 +22,7 @@ export class ApiService {
   }
 
   deleteOne(animal) {
-    this._httpClient.post(this.url + `/delete`, animal).subscribe();
+    this._httpClient.post(this.url + `/delete`, animal, {responseType: 'arraybuffer'}).subscribe();
   }
 
 }
