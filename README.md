@@ -10,5 +10,4 @@ How to install -
 The application will open on localhost:4200 in your browser
 
 To do: 
-1.) Reroute app back to 'gallery' home page after add/delete functions
-2.) Implement 'edit habitat' button on the front end. (Currently implemented and tested server side with Postman)
+1.) Implement 'edit habitat' button on the front end. (Currently implemented and tested server side with Postman)
